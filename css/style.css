@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container {
+  background: -webkit-gradient(linear, left top, right top, from(#acb6e5), to(#74ebd5));
+  background: linear-gradient(to right, #acb6e5, #74ebd5);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body .container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
+body .container .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+  width: 550px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  margin: 0px auto;
+}
+
+body .container .apps .card {
+  position: relative;
+  border-radius: 5px;
+  margin: 10px;
+  height: auto;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .container .apps .card .face, body .container .apps .card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+body .container .apps .card .face {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .container .apps .card .back {
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+body .container .apps .card.toggleCard {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .container .alert.Alert {
+  width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-name: dariAtas;
+          animation-name: dariAtas;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body .container .alert.AlertWin {
+  width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-name: dariAtas;
+          animation-name: dariAtas;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body .container.blockContainer {
+  display: none;
+}
+
+@media screen and (max-width: 570px) {
+  body .container {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  body .container .apps {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  body .container .apps .card {
+    margin: 10px 5px;
+    width: 70px;
+  }
+}
+
+@-webkit-keyframes dariAtas {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dariAtas {
+  from {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
