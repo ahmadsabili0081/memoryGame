@@ -10,22 +10,22 @@ livesCount.innerText = playerLives;
 
 // mendapatkan images;
 let getImages = () => [
-  {imgSrc : '../images/angular.png', name: 'angular' },
-  {imgSrc : '../images/css.png', name:'css' },
-  {imgSrc : '../images/html.png', name:'html' },
-  {imgSrc : '../images/jquery.png', name: 'jquery' },
-  {imgSrc : '../images/js.png', name:'javascript' },
-  {imgSrc : '../images/node.png', name: 'node'},
-  {imgSrc : '../images/react.png', name: 'react'},
-  {imgSrc : '../images/vue.png', name: 'vue'},
-  {imgSrc : '../images/angular.png', name: 'angular' },
-  {imgSrc : '../images/css.png', name:'css' },
-  {imgSrc : '../images/html.png', name:'html' },
-  {imgSrc : '../images/jquery.png', name: 'jquery' },
-  {imgSrc : '../images/js.png', name:'javascript' },
-  {imgSrc : '../images/node.png', name: 'node'},
-  {imgSrc : '../images/react.png', name: 'react'},
-  {imgSrc : '../images/vue.png', name: 'vue'}
+  {imgSrc : './images/angular.png', name: 'angular' },
+  {imgSrc : './images/css.png', name:'css' },
+  {imgSrc : './images/html.png', name:'html' },
+  {imgSrc : './images/jquery.png', name: 'jquery' },
+  {imgSrc : './images/js.png', name:'javascript' },
+  {imgSrc : './images/node.png', name: 'node'},
+  {imgSrc : './images/react.png', name: 'react'},
+  {imgSrc : './images/vue.png', name: 'vue'},
+  {imgSrc : './images/angular.png', name: 'angular' },
+  {imgSrc : './images/css.png', name:'css' },
+  {imgSrc : './images/html.png', name:'html' },
+  {imgSrc : './images/jquery.png', name: 'jquery' },
+  {imgSrc : './images/js.png', name:'javascript' },
+  {imgSrc : './images/node.png', name: 'node'},
+  {imgSrc : './images/react.png', name: 'react'},
+  {imgSrc : './images/vue.png', name: 'vue'}
 ];
 // randomImage
 let randomImage = () => {
